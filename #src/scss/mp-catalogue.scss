@@ -1,0 +1,118 @@
+.mp-catalogue.cp-spec{
+  .mp-catalogue__title{
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+}
+
+.mp-catalogue.cp-spec{
+  .mp-catalogue__top-line{
+    @media (max-width: 991px){
+      padding-left: 15px!important;
+    }
+  }
+}
+
+.cp-benefit{
+
+  &__wrapper{
+    padding: 50px 0 84px;
+    @media (max-width: 1200px) {
+      padding: 20px 0 60px;
+    }
+    @media (max-width: 991px){
+
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-family: 'HelveticaNeueBoldCondensed';
+    color: #303030;
+    margin-bottom: 50px;
+    @media (max-width: 991px){
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+    span{
+      display: block;
+      color: #B5B6B6;
+    }
+  }
+  &__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__block{
+    width: calc(100%/3 - 13.333px);
+    margin-top: -1px;
+    padding: 20px 0 30px;
+    border-bottom: 1px solid rgba(181, 182, 182, .5);
+    border-top: 1px solid rgba(181, 182, 182, .5);
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: #FFD400;
+      position: absolute;
+      top: -3px;
+      left: 0;
+    }
+    @media (max-width: 991px){
+      width: calc(100%/2 - 20px);
+    }
+    @media (max-width: 650px){
+      width: 100%;
+    }
+  }
+  &__title-flex{
+    display: flex;
+    align-items: center;
+  }
+  &__title-icon-block{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #B5B6B6;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  &__title-icon{
+    width: 25px;
+    height: 25px;
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__title-block{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #303030;
+  }
+  &__block-info{
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    width: 100%;
+    max-width: 325px;
+    color: #303030;
+    @media (max-width: 650px){
+      max-width: 90%;
+    }
+  }
+}

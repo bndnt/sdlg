@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SDLG</title>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+@@include('_header.html', {
+"class" : "black"
+})
+
+@@include('_burger.html')
+@@include('_connection-popup.html')
+<div class="bg-popups"></div>
+
+<div class="sdlg-navigation ">
+    <div class="sdlg-navigation__wrapper">
+        <div class="container">
+            <ol class="sdlg-navigation__flex-block">
+                <li>
+                    <a href="#" class="sdlg-navigation__main-link">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sdlg-navigation__second-link">
+                        &nbsp / Новости
+                    </a>
+                </li>
+
+                <li>
+                   <span class="sdlg-navigation__where-we">
+                    &nbsp / Заголовок новости
+                </span>
+                </li>
+
+
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="news-share-page news-page">
+    <div class="news-share-page__wrapper">
+        <div class="container">
+            <div class="news-share-page__tabulation-flex">
+                <div class="news-share-page__tab js-news-share-page__tab">
+                    <button class=" news-share-page__tablinks js-news-share-page__tablinks active"
+                            onclick="openNews(event, 'news-share-page__id-1')">Все новости
+                    </button>
+                    <button class="news-share-page__tablinks js-news-share-page__tablinks"
+                            onclick="openNews(event, 'news-share-page__id-2')">Новости компании
+                    </button>
+                    <button class="news-share-page__tablinks js-news-share-page__tablinks"
+                            onclick="openNews(event, 'news-share-page__id-3')">Акции
+                    </button>
+                    <button class="news-share-page__tablinks js-news-share-page__tablinks"
+                            onclick="openNews(event, 'news-share-page__id-4')">Важные новости
+                    </button>
+                </div>
+
+                <div id="news-share-page__id-1" class="news-share-page__tabcontent js-news-share-page__tabcontent" style=" display: block;">
+                    <div class="news-page__title">
+                        Заголовок новости
+                    </div>
+                    <div class="news-share-page__tabcontent-flex">
+                        <div class="news-page__left">
+                            <div class="news-share-page__tabcontent-main-new-image">
+                                <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                            </div>
+                            <div class="news-page__paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.
+                            </div>
+                            <div class="news-page__paragraph">
+                                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <div class="news-page__paragraph">
+                                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo.
+                            </div>
+                        </div>
+                        <div class="news-page__right">
+                            <div class="news-share-page__tabcontent-date">
+                                <span>01</span>
+                                /
+                                <span>08</span>
+                                /
+                                <span>2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="news-share-page__id-2" class="news-share-page__tabcontent js-news-share-page__tabcontent">
+                    <div class="news-page__title">
+                        Заголовок новости
+                    </div>
+                    <div class="news-share-page__tabcontent-flex">
+                        <div class="news-page__left">
+                            <div class="news-share-page__tabcontent-main-new-image">
+                                <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                            </div>
+                            <div class="news-page__paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.
+                            </div>
+                            <div class="news-page__paragraph">
+                                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <div class="news-page__paragraph">
+                                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo.
+                            </div>
+                        </div>
+                        <div class="news-page__right">
+                            <div class="news-share-page__tabcontent-date">
+                                <span>01</span>
+                                /
+                                <span>08</span>
+                                /
+                                <span>2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="news-share-page__id-3" class="news-share-page__tabcontent js-news-share-page__tabcontent">
+                    <div class="news-page__title">
+                        Заголовок новости
+                    </div>
+                    <div class="news-share-page__tabcontent-flex">
+                        <div class="news-page__left">
+                            <div class="news-share-page__tabcontent-main-new-image">
+                                <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                            </div>
+                            <div class="news-page__paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.
+                            </div>
+                            <div class="news-page__paragraph">
+                                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <div class="news-page__paragraph">
+                                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo.
+                            </div>
+                        </div>
+                        <div class="news-page__right">
+                            <div class="news-share-page__tabcontent-date">
+                                <span>01</span>
+                                /
+                                <span>08</span>
+                                /
+                                <span>2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="news-share-page__id-4" class="news-share-page__tabcontent js-news-share-page__tabcontent">
+                    <div class="news-page__title">
+                        Заголовок новости
+                    </div>
+                    <div class="news-share-page__tabcontent-flex">
+                        <div class="news-page__left">
+                            <div class="news-share-page__tabcontent-main-new-image">
+                                <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                            </div>
+                            <div class="news-page__paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.
+                            </div>
+                            <div class="news-page__paragraph">
+                                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <div class="news-page__paragraph">
+                                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+                                pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo.
+                            </div>
+                        </div>
+                        <div class="news-page__right">
+                            <div class="news-share-page__tabcontent-date">
+                                <span>01</span>
+                                /
+                                <span>08</span>
+                                /
+                                <span>2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="news-page-important">
+    <div class="news-page-important__wrapper">
+        <div class="news-page-important__container">
+            <div class="news-page-important__title">
+                Важные новости
+            </div>
+            <div class="news-page-important__for-slider">
+                <div class="main-page-top-block__slider-arrow-square main-page-top-block__slider-prev js-news-page-important__slider-prev" style="width: 50px;height: 50px;border: 1px solid #303030;">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.83 5L7.41 1.41L6 -8.74228e-07L5.24537e-07 6L6 12L7.41 10.59L3.83 7L16 7L16 5L3.83 5Z"
+                              fill="#303030"/>
+                    </svg>
+                </div>
+
+                <div class="swiper news-page-important__slider js-news-page-important__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide news-page-important__slider-slide">
+                            <div class="news-page-important__slider-slide-flex">
+                                <div class="news-page-important__slider-slide-image">
+                                    <img src="img/mp-stock-and-services2.jpg" alt="img">
+                                </div>
+                                <div class="news-page-important__slider-slide-info">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-page-important__slider-slide-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide news-page-important__slider-slide">
+                            <div class="news-page-important__slider-slide-flex">
+                                <div class="news-page-important__slider-slide-image">
+                                    <img src="img/tecnic-slider-1.jpg" alt="img">
+                                </div>
+                                <div class="news-page-important__slider-slide-info">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-page-important__slider-slide-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide news-page-important__slider-slide">
+                            <div class="news-page-important__slider-slide-flex">
+                                <div class="news-page-important__slider-slide-image">
+                                    <img src="img/mp-stock-and-services2.jpg" alt="img">
+                                </div>
+                                <div class="news-page-important__slider-slide-info">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-page-important__slider-slide-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide news-page-important__slider-slide">
+                            <div class="news-page-important__slider-slide-flex">
+                                <div class="news-page-important__slider-slide-image">
+                                    <img src="img/tecnic-slider-1.jpg" alt="img">
+                                </div>
+                                <div class="news-page-important__slider-slide-info">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-page-important__slider-slide-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="main-page-top-block__slider-arrow-square main-page-top-block__slider-next js-news-page-important__slider-next" style="width: 50px;height: 50px;border: 1px solid #303030;">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.17 7L8.59 10.59L10 12L16 6L10 0L8.59 1.41L12.17 5H0V7H12.17Z"
+                              fill="#303030"/>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="news-share-page-follow">
+    <div class="news-share-page-follow__wrapper">
+        <div class="container">
+            <div class="news-share-page-follow__flex">
+                <div class="news-share-page-follow__left">
+                    <div class="news-share-page-follow__plus">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M6.5 8.5V15H8.5V8.5H15V6.5H8.5V0H6.5V6.5H0V8.5H6.5Z" fill="#B5B6B6"/>
+                        </svg>
+
+                    </div>
+                    <div class="news-share-page-follow__text">
+                        Следите за нами на Facebook
+                    </div>
+                </div>
+                <div class="news-share-page-follow__right">
+                    <div class="news-share-page-follow__link">
+                        <a href="#">
+                            <span class="news-share-page-follow__fb-icon">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg"><rect width="50" height="50" fill="white"/><path
+                                        d="M26.6686 41.6667V26.4617H31.7723L32.5364 20.5361H26.6686V16.7528C26.6686 15.0372 27.1451 13.868 29.6054 13.868L32.7432 13.8665V8.56673C32.2003 8.49478 30.3378 8.3335 28.1709 8.3335C23.6468 8.3335 20.5495 11.0949 20.5495 16.1662V20.5363H15.4326V26.4619H20.5494V41.6668L26.6686 41.6667Z"
+                                        fill="#303030"/></svg>
+                            </span>
+                            <span class="news-share-page-follow__fb-text">
+                                Перейти
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('_footer.html')
+
+<!--@@include('_users-list.html')-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/dist/jquery.inputmask.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+

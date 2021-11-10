@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SDLG</title>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+@@include('_header.html', {
+"class" : "black"
+})
+
+@@include('_burger.html')
+@@include('_connection-popup.html')
+<div class="bg-popups"></div>
+
+<div class="sdlg-navigation ">
+    <div class="sdlg-navigation__wrapper" >
+        <div class="container">
+            <ol class="sdlg-navigation__flex-block">
+                <li>
+                    <a href="#" class="sdlg-navigation__main-link">
+                        Главная
+                    </a>
+                </li>
+                   <span class="sdlg-navigation__where-we">
+                    &nbsp/ Контакты
+                </span>
+                </li>
+
+
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="mp-connection mp-connection-contact-page">
+    <div class="mp-connection__wrapper" style="padding-top: 0;">
+        <div class="container">
+            <div class="mp-connection__title">
+                Свяжитесь с нами
+            </div>
+            <div class="mp-connection__tab-block">
+
+                <div class="tab mp-connection__tabs">
+                    <div class="mp-connection__left-choose">
+                        <div class="mp-connection__left-choose-text">
+                            Выбрать филиал
+                        </div>
+                        <div class="mp-connection__left-choose-icon">
+                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.17L1.41 8.59L-4.37114e-07 10L6 16L12 10L10.59 8.59L7 12.17L7 -2.18557e-07L5 -3.0598e-07L5 12.17Z"
+                                      fill="#303030"/>
+                            </svg>
+
+                        </div>
+                    </div>
+                    <button class="tablinks active" onclick="openTabMainPage(event, 'one')">
+                        <strong>пгт. Глеваха, ул.</strong>
+                        Киевская обл., <br>
+                        ул. Сулимы, 9
+                    </button>
+                    <button class="tablinks" onclick="openTabMainPage(event, 'two')">
+                        <strong>г. Кривой Рог</strong>
+                        <span>
+                            Днепр. обл.,  ул.
+                       </span>
+                        <span>
+                             Песочная, 7-Г
+                         </span>
+                    </button>
+                    <button class="tablinks" onclick="openTabMainPage(event, 'tree')">
+                        <strong>г. Краматорск</strong>
+                        <span>
+                           Донецкая обл.,
+                       </span>
+                        <span>
+                           ул. Стуса, 35
+                       </span>
+                    </button>
+                </div>
+
+                <div id="one" class="tabcontent mp-connection__tab-right-block-flex" style="display: block">
+                    <div class="mp-connection__tab-right-block-flex-cover">
+
+                        <div class="mp-connection__tab-right-block">
+                            <div class="mp-connection__tab-right-title">
+                                Горячая линия
+                            </div>
+                            <a class="mp-connection__tab-right-link" href="tel:+380673535694">
+                                +38 067 353 56 94
+                            </a>
+                            <div class="mp-connection__tab-right-title">
+                                График работы
+                            </div>
+                            <span class="mp-connection__tab-right-span">
+                            Пн – Пт з 8:00 до 18:00
+                        </span>
+                            <button class="mp-connection__tab-right-btn-call">
+                                Заказать звонок
+                            </button>
+                            <a href="#" class="mp-connection__tab-right-btn-all-contacts">
+                                Все контакты
+                            </a>
+                            <div class="mp-connection__tab-right-title">
+                                Почта
+                            </div>
+                            <a class="mp-connection__tab-right-mail-link" href="mailto:sdlg@ets-group.com.ua">
+                                sdlg@ets-group.com.ua
+                            </a>
+                            <div class="mp-connection__tab-right-facebook">
+                                <a href="#">
+                                    <div class="mp-connection__tab-right-facebook-icon">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="50" height="50" fill=" #303030"/>
+                                            <path d="M26.6686 41.6667V26.4617H31.7723L32.5364 20.5361H26.6686V16.7528C26.6686 15.0372 27.1451 13.868 29.6054 13.868L32.7432 13.8665V8.56673C32.2003 8.49478 30.3378 8.3335 28.1709 8.3335C23.6468 8.3335 20.5495 11.0949 20.5495 16.1662V20.5363H15.4326V26.4619H20.5494V41.6668L26.6686 41.6667Z"
+                                                  fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="mp-connection__tab-right-facebook-text">
+                                        Мы в Facebook
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mp-connection__tab-map-block">
+                           <div class="mp-connection__tab-map-flex">
+                               <div class="mp-connection__tab-map-block-one">
+                                    <div class="mp-connection__tab-map-title">
+                                        Отдел продаж:
+
+                                    </div>
+                                   <a href="tel:+3806735356 4" class="mp-connection__tab-map-link-phone">
+                                       +380 67 353 56 94
+                                   </a>
+                                   <a href="mailto:sdlg@ets-group.com.ua" class="mp-connection__tab-map-link-mail">
+                                       sdlg@ets-group.com.ua
+                                   </a>
+                               </div>
+                               <div class="mp-connection__tab-map-block-one">
+                                    <div class="mp-connection__tab-map-title">
+                                        Отдел продаж:
+
+                                    </div>
+                                   <a href="tel:+380673535694" class="mp-connection__tab-map-link-phone">
+                                       +380 67 353 56 94
+                                   </a>
+                                   <a href="mailto:service@ets-group.com.ua" class="mp-connection__tab-map-link-mail">
+                                       service@ets-group.com.ua
+                                   </a>
+                               </div>
+                           </div>
+                            <div class="mp-connection__tab-map-demonstrate">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="two" class="tabcontent mp-connection__tab-right-block-flex">
+                    <div class="mp-connection__tab-right-block-flex-cover">
+
+                        <div class="mp-connection__tab-right-block">
+                            <div class="mp-connection__tab-right-title">
+                                Горячая линия
+                            </div>
+                            <a class="mp-connection__tab-right-link" href="tel:+380673535694">
+                                +38 067 353 56 94
+                            </a>
+                            <div class="mp-connection__tab-right-title">
+                                График работы
+                            </div>
+                            <span class="mp-connection__tab-right-span">
+                            Пн – Пт з 8:00 до 18:00
+                        </span>
+                            <button class="mp-connection__tab-right-btn-call">
+                                Заказать звонок
+                            </button>
+                            <a href="#" class="mp-connection__tab-right-btn-all-contacts">
+                                Все контакты
+                            </a>
+                            <div class="mp-connection__tab-right-title">
+                                Почта
+                            </div>
+                            <a class="mp-connection__tab-right-mail-link" href="mailto:sdlg@ets-group.com.ua">
+                                sdlg@ets-group.com.ua
+                            </a>
+                            <div class="mp-connection__tab-right-facebook">
+                                <a href="#">
+                                    <div class="mp-connection__tab-right-facebook-icon">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="50" height="50" fill=" #303030"/>
+                                            <path d="M26.6686 41.6667V26.4617H31.7723L32.5364 20.5361H26.6686V16.7528C26.6686 15.0372 27.1451 13.868 29.6054 13.868L32.7432 13.8665V8.56673C32.2003 8.49478 30.3378 8.3335 28.1709 8.3335C23.6468 8.3335 20.5495 11.0949 20.5495 16.1662V20.5363H15.4326V26.4619H20.5494V41.6668L26.6686 41.6667Z"
+                                                  fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="mp-connection__tab-right-facebook-text">
+                                        Мы в Facebook
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mp-connection__tab-map-block">
+                            <div class="mp-connection__tab-map-flex">
+                                <div class="mp-connection__tab-map-block-one">
+                                    <div class="mp-connection__tab-map-title">
+                                        Отдел продаж:
+
+                                    </div>
+                                    <a href="tel:+3806735356 4" class="mp-connection__tab-map-link-phone">
+                                        +380 67 353 56 94
+                                    </a>
+                                    <a href="mailto:sdlg@ets-group.com.ua" class="mp-connection__tab-map-link-mail">
+                                        sdlg@ets-group.com.ua
+                                    </a>
+                                </div>
+                                <div class="mp-connection__tab-map-block-one">
+                                    <div class="mp-connection__tab-map-title">
+                                        Отдел продаж:
+
+                                    </div>
+                                    <a href="tel:+380673535694" class="mp-connection__tab-map-link-phone">
+                                        +380 67 353 56 94
+                                    </a>
+                                    <a href="mailto:service@ets-group.com.ua" class="mp-connection__tab-map-link-mail">
+                                        service@ets-group.com.ua
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mp-connection__tab-map-demonstrate">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="tree" class="tabcontent mp-connection__tab-right-block-flex">
+                    <div class="mp-connection__tab-right-block-flex-cover">
+
+                        <div class="mp-connection__tab-right-block">
+                            <div class="mp-connection__tab-right-title">
+                                Горячая линия
+                            </div>
+                            <a class="mp-connection__tab-right-link" href="tel:+380673535694">
+                                +38 067 353 56 94
+                            </a>
+                            <div class="mp-connection__tab-right-title">
+                                График работы
+                            </div>
+                            <span class="mp-connection__tab-right-span">
+                            Пн – Пт з 8:00 до 18:00
+                        </span>
+                            <button class="mp-connection__tab-right-btn-call">
+                                Заказать звонок
+                            </button>
+                            <a href="#" class="mp-connection__tab-right-btn-all-contacts">
+                                Все контакты
+                            </a>
+                            <div class="mp-connection__tab-right-title">
+                                Почта
+                            </div>
+                            <a class="mp-connection__tab-right-mail-link" href="mailto:sdlg@ets-group.com.ua">
+                                sdlg@ets-group.com.ua
+                            </a>
+                            <div class="mp-connection__tab-right-facebook">
+                                <a href="#">
+                                    <div class="mp-connection__tab-right-facebook-icon">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="50" height="50" fill=" #303030"/>
+                                            <path d="M26.6686 41.6667V26.4617H31.7723L32.5364 20.5361H26.6686V16.7528C26.6686 15.0372 27.1451 13.868 29.6054 13.868L32.7432 13.8665V8.56673C32.2003 8.49478 30.3378 8.3335 28.1709 8.3335C23.6468 8.3335 20.5495 11.0949 20.5495 16.1662V20.5363H15.4326V26.4619H20.5494V41.6668L26.6686 41.6667Z"
+                                                  fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="mp-connection__tab-right-facebook-text">
+                                        Мы в Facebook
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mp-connection__tab-map-block">
+                            <div class="mp-connection__tab-map-flex">
+                                <div class="mp-connection__tab-map-block-one">
+                                    <div class="mp-connection__tab-map-title">
+                                        Отдел продаж:
+
+                                    </div>
+                                    <a href="tel:+3806735356 4" class="mp-connection__tab-map-link-phone">
+                                        +380 67 353 56 94
+                                    </a>
+                                    <a href="mailto:sdlg@ets-group.com.ua" class="mp-connection__tab-map-link-mail">
+                                        sdlg@ets-group.com.ua
+                                    </a>
+                                </div>
+                                <div class="mp-connection__tab-map-block-one">
+                                    <div class="mp-connection__tab-map-title">
+                                        Отдел продаж:
+
+                                    </div>
+                                    <a href="tel:+380673535694" class="mp-connection__tab-map-link-phone">
+                                        +380 67 353 56 94
+                                    </a>
+                                    <a href="mailto:service@ets-group.com.ua" class="mp-connection__tab-map-link-mail">
+                                        service@ets-group.com.ua
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mp-connection__tab-map-demonstrate">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('_footer.html')
+
+<!--@@include('_users-list.html')-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/dist/jquery.inputmask.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>

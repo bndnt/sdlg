@@ -1,0 +1,145 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../fonts/#{$url}.woff") format("woff"),
+    url("../fonts/#{$url}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+@import "reset.scss";
+@import "fonts";
+
+
+:root{
+  --grayd3-color: #D3D3D3;
+  --grayac-color: #ACACAC;;
+  --graybe-color:  #BEBEBE;
+  --pink-color: #EC25A3;
+}
+
+$colorblack: #151515;
+$colorpinkeec25:#EC25A3;
+$colorlightdrayd3:#d3d3d3;
+$colorlightdrayac:#acacac;
+$widthxl: 1600px;
+$widthlg: 1200px;
+$widthmd:992px;
+$widthtable:760px;
+$widthsm:650px;
+$widthm:400px;
+*{
+  box-sizing: border-box;
+}
+html{
+
+}
+body {
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  //font-family: 'GothamPro';
+  //font-family: 'HelveticaNeueBoldCondensed';
+  //border-bottom: 1px solid rgba(181, 182, 182, .5);
+  &.noscroll{
+    overflow: hidden;
+  }
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.container-slider{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1212px;
+  padding: 0 15px;
+  position: relative;
+}
+.main-page-top{
+  background-image: url("../img/bg-main-page.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.card-one-tab .p-c-p-product-about__tab{
+  width: 50%;
+  min-width:150px;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(181, 182, 182, .5);
+    @media (max-width: 768px){
+      width: 100%!important;
+    }
+  }
+  .p-c-p-product-about__tablinks{
+    @media (max-width: 768px){
+      margin-bottom: 0;
+    }
+  }
+}
+.card-one-tab{
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__block{
+    width: 50%;
+    @media (max-width: 768px){
+      width: 100%;
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #B5B6B6;
+    margin-bottom: 10px;
+  }
+  &__info{
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+  }
+  &__info-indent{
+    margin-top: 30px;
+  }
+}
+@import "header";
+@import "main-page";
+@import "footer";
+@import "sdlg-navigation";
+@import "mp-catalogue";
+@import "catalogue-inner-page";
+@import "search-page";
+@import "service-page";
+
+//
+@import "product-catalogue-page";
+@import "card-no-page";
+@import "spare-card-page";
+@import "rig-page";
+@import "scoop-page";
+@import "finance-page";
+@import "news-share-page";
+@import "news-page";
+@import "maintenance-page";
+@import "brand-page";
+@import "burger";
+@import "spares-page";
+@import "know-price-popup";

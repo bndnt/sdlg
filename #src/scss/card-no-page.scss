@@ -1,0 +1,112 @@
+.card-no-page{
+
+  &.sdlg-navigation{
+    .container{
+      @media (max-width: 550px) {
+        padding: 0 3px;
+      }
+    }
+    @media (max-width: 550px){
+      font-size: 9px;
+      a{
+        font-size: 9px;
+      }
+    }
+    @media (max-width:360px){
+      font-size: 8px;
+      a{
+        font-size: 8px;
+      }
+    }
+  }
+
+  .p-c-p-product__slider2-slide {
+    padding: 30px 60px 10px;
+  }
+
+  .p-c-p-product-about__tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .p-c-p-product__info-btns-flex {
+    margin-top: 32px;
+  }
+
+  &__slider-top-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #303030;
+    @media (max-width: 650px) {
+      font-size: 16px;
+    }
+  }
+  &__info-flex{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 991px){
+      flex-wrap: wrap;
+    }
+  }
+  &__info-block{
+    width: calc(100%/3 - 14px);
+    @media (max-width: 991px){
+      width: calc(100%/2 - 14px);
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px){
+      width: 100%;
+    }
+
+  }
+  &__info-block-title{
+    width: 16px;
+    height: 16px;
+    margin-bottom: 20px;
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__info-block-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    @media (max-width: 768px){
+      br{
+        display: none;
+      }
+    }
+  }
+  .mp-catalogue__wrapper{
+    padding: 131px 0 90px;
+    @media (max-width: 1200px){
+      padding: 110px 0 80px;
+    }
+
+    @media (max-width:991px){
+      padding: 80px 0 80px;
+    }
+    @media (max-width:768px){
+      padding: 65px 0 60px;
+    }
+
+
+  }
+  .mp-catalogue__exemplar-block {
+    height: 258px;
+  }
+  .mp-catalogue__exemplar-image {
+    height: 166px;
+  }
+  .mp-catalogue__top-line {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

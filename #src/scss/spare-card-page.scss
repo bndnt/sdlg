@@ -1,0 +1,119 @@
+.spare-card-page{
+    &__slider-top-text{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+      color: #303030;
+      margin-bottom: 20px;
+      @media (max-width: 650px) {
+        font-size: 16px;
+      }
+      span{
+        font-weight: 500;
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  .p-c-p-product-about__wrapper{
+    margin-bottom: 100px;
+    @media (max-width: 991px){
+      margin-bottom: 780px;
+    }
+    @media (max-width: 650px){
+      margin-bottom: 60px;
+    }
+  }
+  &__tabcontent{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    @media (max-width: 1180px){
+      br{
+        display: none;
+      }
+    }
+    @media (max-width: 650px){
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+  }
+  &__tabcontent-bolder{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    @media (max-width: 650px){
+      font-size: 14px;
+    }
+  }
+  &__tab-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    @media (max-width: 1200px){
+      font-size: 22px;
+    }
+    @media (max-width:991px){
+      font-size: 20px;
+    }
+    @media (max-width: 650px){
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  &__tab-flex{
+    display: flex;
+    @media (max-width:991px){
+      flex-direction: column;
+    }
+  }
+  &__tab-left{
+    margin-right: 27px;
+  }
+  &__tab-left-block{
+    margin-bottom: 30px;
+    @media (max-width: 650px){
+      margin-bottom: 15px;
+    }
+  }
+  &__tab-subtitle{
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #B5B6B6;
+    @media (max-width:991px){
+      white-space: normal;
+    }
+    @media (max-width: 650px){
+      font-size: 14px;
+    }
+  }
+  &__tab-subtext{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    @media (max-width: 650px){
+      font-size: 14px;
+    }
+  }
+  &__tab-right{
+    width: 100%;
+    max-width: 361px;
+    @media (max-width: 991px){
+      max-width: 100%;
+    }
+  }
+}

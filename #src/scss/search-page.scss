@@ -1,0 +1,114 @@
+.search-page{
+  &__wrapper{
+    padding-bottom: 100px;
+    @media (max-width: 991px){
+      padding-bottom: 80px;
+    }
+  }
+  .container{
+    max-width: 800px;
+    @media (max-width: 991px) {
+      padding: 0 15px;
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-family: 'HelveticaNeueBoldCondensed';
+    color: #303030;
+    margin-bottom: 50px;
+    text-align: center;
+    @media (max-width: 1200px) {
+      font-size: 62px;
+    }
+    @media (max-width: 991px) {
+      font-size: 58px;
+      margin-bottom: 45px;
+    }
+    @media (max-width: 768px){
+      font-size: 54px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 650px){
+      font-size: 40px;
+      margin-bottom: 35px;
+    }
+  }
+  &__block{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  input{
+    width: calc(100% - 81px);
+    border: 1px solid #B5B6B6;
+    border-right: none;
+    box-sizing: border-box;
+    padding: 19px 20px 17px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #B5B6B6;
+    &:focus-within{
+      &::placeholder{
+        color: transparent;
+      }
+    }
+    &::placeholder{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #B5B6B6;
+    }
+  }
+  &__block-btn{
+    transition: all .4s;
+    width: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD400;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #303030;
+    cursor: pointer;
+    &:hover{
+      background-color: #DCB700;
+    }
+  }
+  &__result{
+   text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #303030;
+    font-family: 'HelveticaNeueBoldCondensed';
+
+    @media (max-width: 1200px) {
+      font-size: 34px;
+    }
+    @media (max-width: 991px){
+      font-size: 32px;
+    }
+    @media (max-width: 768px){
+      font-size: 30px;
+    }
+    @media (max-width: 650px){
+      font-size: 26px;
+    }
+    span{
+      color: #FFD400;
+    }
+  }
+
+
+}

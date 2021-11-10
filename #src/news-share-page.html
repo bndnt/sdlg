@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SDLG</title>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+@@include('_header.html', {
+"class" : "black"
+})
+
+@@include('_burger.html')
+@@include('_connection-popup.html')
+<div class="bg-popups"></div>
+
+<div class="sdlg-navigation ">
+    <div class="sdlg-navigation__wrapper">
+        <div class="container">
+            <ol class="sdlg-navigation__flex-block">
+                <li>
+                    <a href="#" class="sdlg-navigation__main-link">
+                        Главная
+                    </a>
+                </li>
+
+                <li>
+                   <span class="sdlg-navigation__where-we">
+                    &nbsp / Новости
+                </span>
+                </li>
+
+
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="news-share-page">
+    <div class="news-share-page__wrapper">
+        <div class="container">
+            <div class="news-share-page__title">
+                Новости и акции
+            </div>
+            <div class="news-share-page__tabulation-flex">
+                <div class="news-share-page__tab js-news-share-page__tab">
+                    <button class=" news-share-page__tablinks js-news-share-page__tablinks active" onclick="openNews(event, 'news-share-page__id-1')">Все новости</button>
+                    <button class="news-share-page__tablinks js-news-share-page__tablinks" onclick="openNews(event, 'news-share-page__id-2')">Новости компании</button>
+                    <button class="news-share-page__tablinks js-news-share-page__tablinks" onclick="openNews(event, 'news-share-page__id-3')">Акции</button>
+                    <button class="news-share-page__tablinks js-news-share-page__tablinks" onclick="openNews(event, 'news-share-page__id-4')">Важные новости</button>
+                </div>
+
+                <div id="news-share-page__id-1" class="news-share-page__tabcontent js-news-share-page__tabcontent" style =" display: block;">
+                    <div style="display: flex;" id="js-news-share-page-tablinks2__id-1" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    1 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-2" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    1.2 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-3" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                   1.3 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-4" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    1.4 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-share-page__tabcontent-other">
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-1')" class=" active js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-2')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-3')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-4')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="news-share-page__tabcontent-pagitanion">
+                        <div class="news-share-page__tabcontent-pagitanion-block news-share-page__tabcontent-pagitanion-block-arrow">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.5" d="M3.83 5L7.41 1.41L6 -8.74228e-07L5.24537e-07 6L6 12L7.41 10.59L3.83 7L16 7L16 5L3.83 5Z" />
+                            </svg>
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page active">
+                            1
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            2
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            ...
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            30
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block news-share-page__tabcontent-pagitanion-block-arrow news-share-page__tabcontent-pagitanion-block-arrow-avalible">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.17 7L8.59 10.59L10 12L16 6L10 0L8.59 1.41L12.17 5H0V7H12.17Z" />
+                            </svg>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="news-share-page__id-2" class="news-share-page__tabcontent js-news-share-page__tabcontent" >
+                    <div style="display: flex;" id="js-news-share-page-tablinks2__id-11" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    2.1 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-22" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    2.2 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-33" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    2.3 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-44" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    2.4 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-share-page__tabcontent-other">
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-11')" class=" active js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-22')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-33')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-44')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="news-share-page__tabcontent-pagitanion">
+                        <div class="news-share-page__tabcontent-pagitanion-block news-share-page__tabcontent-pagitanion-block-arrow">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.5" d="M3.83 5L7.41 1.41L6 -8.74228e-07L5.24537e-07 6L6 12L7.41 10.59L3.83 7L16 7L16 5L3.83 5Z" />
+                            </svg>
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page active">
+                            1
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            2
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            ...
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            30
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block news-share-page__tabcontent-pagitanion-block-arrow news-share-page__tabcontent-pagitanion-block-arrow-avalible">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.17 7L8.59 10.59L10 12L16 6L10 0L8.59 1.41L12.17 5H0V7H12.17Z" />
+                            </svg>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="news-share-page__id-3" class="news-share-page__tabcontent js-news-share-page__tabcontent" >
+                    <div style="display: flex;" id="js-news-share-page-tablinks2__id-111" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    1 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-222" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-333" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-444" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-share-page__tabcontent-other">
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-111')" class=" active js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-222')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-333')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-444')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="news-share-page__tabcontent-pagitanion">
+                        <div class="news-share-page__tabcontent-pagitanion-block news-share-page__tabcontent-pagitanion-block-arrow">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.5" d="M3.83 5L7.41 1.41L6 -8.74228e-07L5.24537e-07 6L6 12L7.41 10.59L3.83 7L16 7L16 5L3.83 5Z" />
+                            </svg>
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page active">
+                            1
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            2
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            ...
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            30
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block news-share-page__tabcontent-pagitanion-block-arrow news-share-page__tabcontent-pagitanion-block-arrow-avalible">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.17 7L8.59 10.59L10 12L16 6L10 0L8.59 1.41L12.17 5H0V7H12.17Z" />
+                            </svg>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="news-share-page__id-4" class="news-share-page__tabcontent js-news-share-page__tabcontent" >
+                    <div style="display: flex;" id="js-news-share-page-tablinks2__id-1111" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    1 Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-2222" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-3333" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div id="js-news-share-page-tablinks2__id-4444" class="news-share-page__tabcontent-flex js-news-share-page-tabcontent2">
+                        <div class="news-share-page__tabcontent-main-new-image">
+                            <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                        </div>
+                        <div class="news-share-page__tabcontent-main-info">
+                            <div class="news-share-page__tabcontent-main-info-cover">
+                                <div class="news-share-page__tabcontent-date">
+                                    <span>01</span>
+                                    /
+                                    <span>08</span>
+                                    /
+                                    <span>2020</span>
+                                </div>
+                                <div class="news-share-page__tabcontent-title">
+                                    Заголовок новости
+                                </div>
+                                <div class="news-share-page__tabcontent-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic
+                                </div>
+                            </div>
+
+                            <a href="#" class="news-share-page__tabcontent-link">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-share-page__tabcontent-other">
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-1111')" class=" active js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-2222')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-3333')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button onclick="openNewsSecond(event, 'js-news-share-page-tablinks2__id-4444')" class="js-news-share-page-tablinks2 news-share-page__tabcontent-other-block">
+                            <div class="news-share-page__tabcontent-other-flex">
+                                <div class="news-share-page__tabcontent-other-image ">
+                                    <img src="img/news-share-page__tabcontent.jpg" alt="img">
+                                    <div class="news-share-page__tabcontent-other-absolute">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="49" height="49" stroke="white"></rect>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4999 17.5332C32.2963 17.5332 37.6178 24.7085 37.8411 25.014C38.0529 25.3035 38.0529 25.6969 37.8411 25.9867C37.6178 26.292 32.2963 33.4673 25.4999 33.4673C18.7034 33.4673 13.3817 26.292 13.1586 25.9865C12.9471 25.6966 12.9471 25.3035 13.1586 25.0137C13.3817 24.7085 18.7034 17.5332 25.4999 17.5332ZM14.874 25.4997C16.1576 27.0566 20.4936 31.8189 25.4999 31.8189C30.5169 31.8189 34.8438 27.059 36.1257 25.5008C34.8416 23.9431 30.5059 19.1815 25.4999 19.1815C20.4828 19.1815 16.1559 23.9414 14.874 25.4997ZM20.5552 25.4998C20.5552 22.7731 22.7736 20.5547 25.5003 20.5547C28.2269 20.5547 30.4453 22.7731 30.4453 25.4998C30.4453 28.2264 28.2269 30.4448 25.5003 30.4448C22.7736 30.4448 20.5552 28.2264 20.5552 25.4998ZM22.2036 25.4998C22.2036 27.3176 23.6824 28.7964 25.5003 28.7964C27.3181 28.7964 28.7969 27.3176 28.7969 25.4998C28.7969 23.6819 27.3181 22.2031 25.5003 22.2031C23.6824 22.2031 22.2036 23.6819 22.2036 25.4998Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="news-share-page__tabcontent-other-right">
+                                    <div class="news-share-page__tabcontent-date">
+                                        <span>01</span>
+                                        /
+                                        <span>08</span>
+                                        /
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="news-share-page__tabcontent-other-title">
+                                        Работая в правильных режимах мощности – экономишь деньги на топливе
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="news-share-page__tabcontent-pagitanion">
+                        <div class="news-share-page__tabcontent-pagitanion-block news-share-page__tabcontent-pagitanion-block-arrow">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.5" d="M3.83 5L7.41 1.41L6 -8.74228e-07L5.24537e-07 6L6 12L7.41 10.59L3.83 7L16 7L16 5L3.83 5Z" />
+                            </svg>
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page active">
+                            1
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            2
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            ...
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block-number-page">
+                            30
+                        </div>
+                        <div class="news-share-page__tabcontent-pagitanion-block news-share-page__tabcontent-pagitanion-block-arrow news-share-page__tabcontent-pagitanion-block-arrow-avalible">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.17 7L8.59 10.59L10 12L16 6L10 0L8.59 1.41L12.17 5H0V7H12.17Z" />
+                            </svg>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="news-share-page-follow">
+    <div class="news-share-page-follow__wrapper">
+        <div class="container">
+            <div class="news-share-page-follow__flex">
+                <div class="news-share-page-follow__left">
+                    <div class="news-share-page-follow__plus">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 8.5V15H8.5V8.5H15V6.5H8.5V0H6.5V6.5H0V8.5H6.5Z" fill="#B5B6B6"/>
+                        </svg>
+
+                    </div>
+                    <div class="news-share-page-follow__text">
+                        Следите за нами на Facebook
+                    </div>
+                </div>
+                <div class="news-share-page-follow__right">
+                    <div class="news-share-page-follow__link">
+                        <a href="#">
+                            <span class="news-share-page-follow__fb-icon">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="50" height="50" fill="white"/><path d="M26.6686 41.6667V26.4617H31.7723L32.5364 20.5361H26.6686V16.7528C26.6686 15.0372 27.1451 13.868 29.6054 13.868L32.7432 13.8665V8.56673C32.2003 8.49478 30.3378 8.3335 28.1709 8.3335C23.6468 8.3335 20.5495 11.0949 20.5495 16.1662V20.5363H15.4326V26.4619H20.5494V41.6668L26.6686 41.6667Z" fill="#303030"/></svg>
+                            </span>
+                            <span class="news-share-page-follow__fb-text">
+                                Перейти
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('_footer.html')
+
+<!--@@include('_users-list.html')-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/dist/jquery.inputmask.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,177 @@
+.hamburger{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  overflow: hidden;
+  //overflow-y: scroll;
+  background: #303030;
+  transition: all .4s;
+  z-index: 5;
+  //display: none;
+
+  &.hamburger-active{
+    left: 0;
+  }
+  &__wrapper{
+    padding: 150px 24px 41px;
+    @media (max-width: 360px) {
+      padding: 145px 24px 5px;
+    }
+    @media (max-height: 740px){
+      padding: 145px 24px 5px;
+    }
+  }
+  &__btn-catalogue{
+    background-color: #FFD400;
+    height: 50px;
+    margin-top: 20px;
+    transition: all .4s;
+    @media (max-width: 360px){
+      height: 42px;
+      margin-top: 13px;
+    }
+    @media (max-height: 740px){
+      height: 42px;
+      margin-top: 13px;
+    }
+    &:hover{
+      background-color: #DCB700;
+    }
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .main-page-top-block__catalog-text{
+    margin-right: 120px;
+    display: block;
+    font-size: 16px!important;
+    @media (max-width: 360px){
+      font-size: 14px!important;
+    }
+    @media (max-height: 740px){
+      font-size: 14px!important;
+    }
+  }
+  .header__top-search{
+    @media (max-width: 360px){
+      margin-top: 10px;
+      padding: 12px 27px 14px;
+      height: 42px;
+    }
+    @media (max-height: 740px){
+      margin-top: 10px;
+      padding: 12px 27px 14px;
+      height: 42px;
+    }
+  }
+  input{
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    &::placeholder{
+      background-color: transparent;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+    &:focus-within{
+      &::placeholder{
+        color: transparent;
+      }
+    }
+  }
+  &__nav{
+    //margin-top: 17px;
+  }
+  &__nav ul{
+    width: 100%;
+    height: 100%;
+    li{
+      width: 100%;
+      padding: 30px 0 10px;
+      border-bottom: 1px solid #B5B6B6;
+      @media (max-width: 360px){
+        padding: 18px 0 7px;
+      }
+      @media (max-height: 740px){
+        padding: 18px 0 7px;
+      }
+      a{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        @media (max-width: 360px){
+          font-size: 12px;
+        }
+        @media (max-height: 740px){
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .header__contact-link-phone{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+    @media (max-width: 360px){
+      font-size: 16px;
+    }
+    @media (max-height: 740px){
+      font-size: 16px;
+    }
+  }
+  .header__contact-flex{
+    margin-top: 20px;
+
+  }
+  .header__contact-link-mail{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    @media (max-width: 360px){
+      font-size: 14px;
+    }
+    @media (max-height: 740px){
+      font-size: 14px;
+    }
+  }
+  .header__contact-flex{
+    margin-top: 20px;
+    @media (max-width: 360px){
+      margin-top: 15px;
+    }
+    @media (max-height: 740px){
+      margin-top: 15px;
+    }
+  }
+  .header__contact-icon-tel{
+    width: 13px;
+    height: 14px;
+  }
+  .header__contact-icon-mail{
+    width: 16px;
+    height: 14px;
+  }
+
+}

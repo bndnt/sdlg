@@ -1,0 +1,155 @@
+
+@media (max-width: 1304px){
+  .header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto 0;
+    align-items: center;
+    .header__center{
+      color: var(--grayac-color);
+      font-size: 18px;
+      line-height: 23px;
+    }
+    .header__number{
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 30px;
+    }
+  }
+
+  .details__content{
+    width: 60%;
+    margin: 100px 0 0 0;
+    .details__content-start{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 130%;
+    }
+    .details__title{
+
+      height: 73px;
+
+      .details__title-main{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 69px;
+        line-height: 73px;
+        color: var(--pink-color);
+        z-index: 30;
+
+      }
+      .details__title-under{
+        display: inline-block;
+        font-size: 69px;
+        line-height: 73px;
+        opacity: 0.4;
+        //margin: -200px 0 35 -6px;
+        top:-67px;
+        left: -6px;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        position: relative;
+        z-index: -10;
+      }}
+
+    .details__content-text{
+      width: auto;
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 30px;
+    }
+    .details__link-main{
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 130%;
+      padding: 27px 80px 31px 38px;
+      //display: inline-block;
+      background: linear-gradient(245.78deg, #EC25A3 16.92%, #8D35F8 63.4%);
+      border-radius: 5px;
+      position: relative;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.5s;
+      margin-bottom: 1px;
+    }
+    .details__link-main::after{
+      content: '';
+      width: 25px;
+      height: 22px;
+      //display: inline-block;
+      background-image: url("../img/arrow.png");
+      position: absolute;
+      z-index: 5;
+      left:295px;
+      top: 35px;
+    }
+    .details__link-main:hover{
+      background: linear-gradient(245.78deg, #d3128c 16.92%, #7409f6 63.4%);
+    }
+    .details__link-under{
+
+      position: relative;
+      width: 343px;
+      height: 90px;
+      margin: -82px 0 0 -8px;
+      border-radius: 3px;
+      background: #000;
+      text-align: center;
+      transition: all 0.5s;
+    }
+
+    .details__link-under::before{
+      content: "";
+      position: absolute;
+      top: -2px;
+      bottom: -2px;
+      left: -2px;
+      right: -2px;
+      background: linear-gradient(245.78deg, #EC25A3 16.92%, #8D35F8 63.4%);
+      border-radius: 5px;
+      z-index: -1;
+    }
+    .details__merits{
+      margin: 55px 0 0 100px;
+      position: absolute;
+      .video__play{
+        top:-191px;
+        left: 300px;
+
+        .video__play-start {
+          width: 107.39px;
+        }
+      }
+    }
+    .details__merits-title{
+      font-size: 20px;
+      line-height: 110%;
+    }
+    .details__merits-occupation{
+      font-size: 16px;
+      line-height: 130%;
+      color: var(--graybe-color);
+      margin-bottom: 10px;
+    }
+    .details__merits-about{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      span{
+        font-weight: 600;
+        color: var(--pink-color);
+      }
+    }
+
+  }
+  .video{
+    width: 40%;
+    .video__man{
+
+      max-width: 100%;
+      height:auto!important ;
+    }
+  }
+}
