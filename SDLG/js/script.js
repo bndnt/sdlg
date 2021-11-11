@@ -539,3 +539,23 @@ if(document.querySelector('.js-know-price-popup__plus')){
         document.body.classList.remove('noscroll');
     })
 }
+
+$(document).on('click', '.mp-about__slide-map g', function (e){
+    $('.js-popup-map').show();
+    $('.bg-popups').addClass('active');
+    $('body').addClass('noscroll');
+});
+
+$(document).on('click', '.js-popup-map-btn-exit', function (e){
+    $('.js-popup-map').hide();
+    $('.bg-popups').removeClass('active');
+    $('body').removeClass('noscroll');
+});
+
+$(document).on('click', '.js-maintenance-map .js-on', function (e){
+    e.preventDefault();
+    let region = $(this).attr('data-class');
+    console.log(region)
+    $('.js-maintenance-tab-map').find('.maintenance-tab-map__item').removeClass('js-active');
+    $('.js-maintenance-tab-map').find("." + region).addClass('js-active');
+});

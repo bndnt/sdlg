@@ -630,6 +630,35 @@
       height: 100%;
     }
   }
+  &__map {
+    g {
+      &:hover, &.js-active {
+        cursor: pointer;
+        .region {
+          fill:#FFD400;
+        }
+        .region-icon {
+          opacity: 1;
+        }
+      }
+      &.js-on {
+        cursor: pointer;
+        .region {
+          fill:#FFD400;
+        }
+
+      }
+      .region {
+        fill: #B5B6B6;
+        transition: .3s linear;
+      }
+      .region-icon {
+        opacity: 0;
+        fill: #303030;
+        transition: .3s linear;
+      }
+    }
+  }
   &__subtitle{
     margin-top: 15px;
     font-style: normal;
@@ -1108,6 +1137,15 @@
     @media (max-width: 360px){
       width: 155px;
       height: 140px;
+    }
+  }
+}
+.maintenance-tab-map {
+
+  &__item {
+    display: none;
+    &.js-active {
+      display: block;
     }
   }
 }
