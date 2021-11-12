@@ -200,8 +200,8 @@ select {
 
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
-  font-weight: 900;
+  src: url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
@@ -232,8 +232,16 @@ select {
 
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
-  font-weight: 700;
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Thin.woff2") format("woff2");
+  font-weight: 100;
   font-display: swap;
   font-style: normal;
 }
@@ -248,14 +256,6 @@ select {
 
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeueCyr";
   src: url("../fonts/HelveticaNeueCyr-UltraLight.woff") format("woff"), url("../fonts/HelveticaNeueCyr-UltraLight.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
@@ -264,8 +264,8 @@ select {
 
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Thin.woff2") format("woff2");
-  font-weight: 100;
+  src: url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
+  font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
@@ -2470,6 +2470,14 @@ body.noscroll {
 
 .mp-about__slide-map g:hover .region-icon {
   opacity: 1;
+}
+
+.mp-about__slide-map g.js-on {
+  cursor: pointer;
+}
+
+.mp-about__slide-map g.js-on .region {
+  fill: #B5B6B6;
 }
 
 .mp-about__slide-map g .region {
