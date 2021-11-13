@@ -691,6 +691,9 @@
         &:hover a{
           color: #FFD400;
         }
+        &:last-child{
+          margin-bottom: 0;
+        }
         a{
           font-style: normal;
           font-weight: 400;
@@ -714,7 +717,7 @@
     ul{
       display: flex;
       flex-direction: column;
-      padding: 20px 15px 25px 15px;
+      padding: 20px 15px 24px 15px;
       justify-content: flex-start;
       align-items: flex-start;
       li{
@@ -722,6 +725,9 @@
         padding: 0;
         &:hover a{
           color: #FFD400;
+        }
+        &:last-child{
+          margin-bottom: 0;
         }
         a{
           font-style: normal;

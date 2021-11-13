@@ -183,25 +183,9 @@ select {
 }
 
 @font-face {
-  font-family: "HelveticaNeueBlackCondensed";
-  src: url("../fonts/HelveticaNeueBlackCondensed.woff") format("woff"), url("../fonts/HelveticaNeueBlackCondensed.woff2") format("woff2");
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeueBoldCondensed";
-  src: url("../fonts/HelveticaNeueBoldCondensed.woff") format("woff"), url("../fonts/HelveticaNeueBoldCondensed.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
-  font-weight: 700;
+  src: url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
+  font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
@@ -216,8 +200,24 @@ select {
 
 @font-face {
   font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
   src: url("../fonts/HelveticaNeueCyr-Heavy.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Heavy.woff2") format("woff2");
   font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
+  font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
@@ -239,6 +239,22 @@ select {
 }
 
 @font-face {
+  font-family: "HelveticaNeueBlackCondensed";
+  src: url("../fonts/HelveticaNeueBlackCondensed.woff") format("woff"), url("../fonts/HelveticaNeueBlackCondensed.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueBoldCondensed";
+  src: url("../fonts/HelveticaNeueBoldCondensed.woff") format("woff"), url("../fonts/HelveticaNeueBoldCondensed.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "HelveticaNeueCyr";
   src: url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Thin.woff2") format("woff2");
   font-weight: 100;
@@ -248,24 +264,8 @@ select {
 
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeueCyr";
   src: url("../fonts/HelveticaNeueCyr-UltraLight.woff") format("woff"), url("../fonts/HelveticaNeueCyr-UltraLight.woff2") format("woff2");
   font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
-  font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
@@ -1139,6 +1139,10 @@ body.noscroll {
   color: #FFD400;
 }
 
+.header__nav-hidden-first ul li:last-child {
+  margin-bottom: 0;
+}
+
 .header__nav-hidden-first ul li a {
   font-style: normal;
   font-weight: 400;
@@ -1169,7 +1173,7 @@ body.noscroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 15px 25px 15px;
+  padding: 20px 15px 24px 15px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -1185,6 +1189,10 @@ body.noscroll {
 
 .header__nav-hidden-third ul li:hover a {
   color: #FFD400;
+}
+
+.header__nav-hidden-third ul li:last-child {
+  margin-bottom: 0;
 }
 
 .header__nav-hidden-third ul li a {
@@ -3386,10 +3394,6 @@ body.noscroll {
   font-weight: 700;
 }
 
-.mp-connection__tab-right-block {
-  padding-top: 16px;
-}
-
 .mp-connection__tab-right-block-flex {
   width: calc(100% - 180px);
 }
@@ -3568,6 +3572,10 @@ body.noscroll {
   width: 100%;
   max-width: 575px;
   height: 384px;
+}
+
+.contacts-page .mp-connection__tab-right-block {
+  padding-top: 0 !important;
 }
 
 .mp-connection.mp-connection-contact-page .mp-connection__tab-map-block {
@@ -5678,6 +5686,10 @@ body.noscroll {
   margin-bottom: 50px;
 }
 
+.p-c-p-product-about__table-half-block1-3 {
+  width: 57% !important;
+}
+
 .p-c-p-product-about__table-half-block {
   width: calc(100%/2 - 10px);
 }
@@ -5906,6 +5918,10 @@ body.noscroll {
 .spare-card-page__tab-right {
   width: 100%;
   max-width: 361px;
+}
+
+.spare-card-page.p-c-p-product-about {
+  margin-bottom: 100px;
 }
 
 .rg-pg-rig__wrapper {
@@ -10616,6 +10632,10 @@ body.noscroll {
     max-width: 100%;
   }
 
+  .spare-card-page.p-c-p-product-about {
+    margin-bottom: 780px;
+  }
+
   .rg-pg-rig__wrapper {
     padding-bottom: 85px;
   }
@@ -12064,6 +12084,11 @@ body.noscroll {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 0;
+  }
+
+  .p-c-p-product-about__table-half-block1-3 {
+    width: 100% !important;
+    margin-bottom: 30px;
   }
 
   .p-c-p-product-about__table-half-block {
@@ -13646,6 +13671,10 @@ body.noscroll {
 
   .spare-card-page__tab-subtext {
     font-size: 14px;
+  }
+
+  .spare-card-page.p-c-p-product-about {
+    margin-bottom: 60px;
   }
 
   .rg-pg-rig__wrapper {

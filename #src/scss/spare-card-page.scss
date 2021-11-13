@@ -117,3 +117,13 @@
     }
   }
 }
+
+.spare-card-page.p-c-p-product-about{
+margin-bottom: 100px;
+@media (max-width: 991px){
+  margin-bottom: 780px;
+}
+@media (max-width: 650px){
+  margin-bottom: 60px;
+}
+}

@@ -514,6 +514,16 @@ if(document.querySelector('.js-header__top-right-connection')){
         document.body.classList.add('noscroll');
     })
 }
+
+if(document.querySelector('.js-p-c-p-product__info-price2')){
+    document.querySelector('.js-p-c-p-product__info-price2').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector('.js-connection-popup').classList.add('active');
+        document.querySelector('.bg-popups').classList.add('active');
+        document.body.classList.add('noscroll');
+    })
+}
+
 if(document.querySelector('.js-connection-popup__plus')){
     document.querySelector('.js-connection-popup__plus').addEventListener('click', function (e) {
         e.preventDefault();
@@ -523,8 +533,8 @@ if(document.querySelector('.js-connection-popup__plus')){
     })
 }
 
-if(document.querySelector('.p-c-p-product__info-price')){
-    document.querySelector('.p-c-p-product__info-price').addEventListener('click', function (e) {
+if(document.querySelector('.js-p-c-p-product__info-price')){
+    document.querySelector('.js-p-c-p-product__info-price').addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector('.js-know-price-popup').classList.add('active');
         document.querySelector('.bg-popups').classList.add('active');

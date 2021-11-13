@@ -721,6 +721,13 @@
       margin-bottom: 0;
     }
   }
+  &-half-block1-3{
+    width: 57%!important;
+    @media (max-width: 768px){
+      width: 100% !important;
+      margin-bottom: 30px;
+    }
+  }
   &-half-block{
     width: calc(100%/2 - 10px);
     @media (max-width: 768px){

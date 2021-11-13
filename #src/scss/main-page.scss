@@ -3134,7 +3134,7 @@
   }
 
   &__tab-right-block {
-    padding-top: 16px;
+    //padding-top: 16px;
   }
 
   &__tab-right-block-flex {
@@ -3380,6 +3380,10 @@
   }
 
 
+}
+
+.contacts-page .mp-connection__tab-right-block{
+  padding-top: 0!important;
 }
 
 .mp-connection.mp-connection-contact-page{
