@@ -9069,7 +9069,22 @@ body.noscroll {
   margin-right: 113px;
 }
 
+.thanks-page-block .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
 .thanks-page {
+  background-image: url("../img/thanks-page-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9077,7 +9092,11 @@ body.noscroll {
 }
 
 .thanks-page .thanks-page-block {
-  padding-top: 140px;
+  height: calc(100% - 152px);
+}
+
+.thanks-page .thanks-page-block__wrapper {
+  height: 100%;
 }
 
 .thanks-page .thanks-page-block__title {
@@ -9616,10 +9635,6 @@ body.noscroll {
 
   .brand-page-certificate__main-title {
     font-size: 58px;
-  }
-
-  .thanks-page .thanks-page-block {
-    padding-top: 110px;
   }
 
   .thanks-page .thanks-page-block__title {
@@ -11364,10 +11379,6 @@ body.noscroll {
   .rubber-wheel-new-page .fin-p-financing__title {
     margin-right: 75px;
     white-space: nowrap;
-  }
-
-  .thanks-page .thanks-page-block {
-    padding-top: 100px;
   }
 
   .thanks-page .thanks-page-block__title {

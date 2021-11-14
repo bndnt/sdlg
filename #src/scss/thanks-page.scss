@@ -1,15 +1,30 @@
+.thanks-page-block{
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
 .thanks-page{
+  background-image: url("../img/thanks-page-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   .thanks-page-block{
-    padding-top: 140px;
+    height: calc(100% - 152px);
+    //display: flex;
+    //align-items: center;
+    &__wrapper{
+      height: 100%;
+    }
     @media (max-width: 1200px){
-      padding-top: 110px;
+
     }
     @media (max-width: 991px){
-      padding-top: 100px;
+
     }
     &__title{
       font-family: 'HelveticaNeueBoldCondensed';

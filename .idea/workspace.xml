@@ -20,21 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50f78d95-a9ba-46b9-a6c5-65b4588b5b0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/#src/scss/rubber-wheel-new-page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/scss/thanks-page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/thanks-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/catalogue-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/catalogue-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/rubber-wheel-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/rubber-wheel-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/main-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/main-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/thanks-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/thanks-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/thanks-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/thanks-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/catalogue-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/catalogue-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLG/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLG/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/rubber-wheel-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/rubber-wheel-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDLG/thanks-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/thanks-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +104,7 @@
       <workItem from="1636631888857" duration="6442000" />
       <workItem from="1636661908504" duration="3099000" />
       <workItem from="1636721716634" duration="816000" />
-      <workItem from="1636899731545" duration="5303000" />
+      <workItem from="1636899731545" duration="6442000" />
     </task>
     <servers />
   </component>
