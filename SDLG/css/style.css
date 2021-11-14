@@ -183,6 +183,14 @@ select {
 }
 
 @font-face {
+  font-family: "HelveticaNeueBlackCondensed";
+  src: url("../fonts/HelveticaNeueBlackCondensed.woff") format("woff"), url("../fonts/HelveticaNeueBlackCondensed.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "HelveticaNeueCyr";
   src: url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
   font-weight: 900;
@@ -194,6 +202,14 @@ select {
   font-family: "HelveticaNeueCyr";
   src: url("../fonts/HelveticaNeueCyr-BlackItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-BlackItalic.woff2") format("woff2");
   font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueBoldCondensed";
+  src: url("../fonts/HelveticaNeueBoldCondensed.woff") format("woff"), url("../fonts/HelveticaNeueBoldCondensed.woff2") format("woff2");
+  font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
@@ -234,22 +250,6 @@ select {
   font-family: "HelveticaNeueCyr";
   src: url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
   font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeueBlackCondensed";
-  src: url("../fonts/HelveticaNeueBlackCondensed.woff") format("woff"), url("../fonts/HelveticaNeueBlackCondensed.woff2") format("woff2");
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeueBoldCondensed";
-  src: url("../fonts/HelveticaNeueBoldCondensed.woff") format("woff"), url("../fonts/HelveticaNeueBoldCondensed.woff2") format("woff2");
-  font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
@@ -1265,13 +1265,13 @@ body.noscroll {
 
 .main-page-top-block__catalog {
   background-color: #FFD400;
-  padding: 15px 20px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
 }
 
 .main-page-top-block__catalog a {
+  padding: 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1310,13 +1310,13 @@ body.noscroll {
 .main-page-top-block__know-more {
   background-color: transparent;
   border: 1px solid #B5B6B6;
-  padding: 17px 30px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
 }
 
 .main-page-top-block__know-more a {
+  padding: 17px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9043,6 +9043,89 @@ body.noscroll {
   text-decoration: underline;
 }
 
+.rubber-wheel-new-page__wrapper {
+  margin-bottom: 80px;
+}
+
+.rubber-wheel-new-page .fin-p-financing__ets-about {
+  margin-top: 0;
+}
+
+.rubber-wheel-new-page .fin-p-financing__top-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rubber-wheel-new-page .mp-catalogue__block3 {
+  width: calc(100% / 3 - 13.3px);
+}
+
+.rubber-wheel-new-page .mp-catalogue__exemplar-text {
+  padding-bottom: 1px;
+}
+
+.rubber-wheel-new-page .fin-p-financing__title {
+  margin-right: 113px;
+}
+
+.thanks-page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.thanks-page .thanks-page-block {
+  padding-top: 140px;
+}
+
+.thanks-page .thanks-page-block__title {
+  font-family: 'HelveticaNeueBoldCondensed';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 97px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.thanks-page .thanks-page-block__flex {
+  width: 100%;
+  max-width: 773px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.thanks-page .thanks-page-block__left {
+  width: calc(100% - 307px);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.thanks-page .thanks-page-block__right {
+  margin-top: 10px;
+  width: 178px;
+}
+
+.thanks-page .thanks-page-block__right .main-page-top-block__relative-block-btn {
+  width: 100% !important;
+}
+
 @media (min-width: 769px) {
   .brand-page-history__date-block.active .brand-page-history__image-hidden-block {
     display: block;
@@ -9534,6 +9617,15 @@ body.noscroll {
   .brand-page-certificate__main-title {
     font-size: 58px;
   }
+
+  .thanks-page .thanks-page-block {
+    padding-top: 110px;
+  }
+
+  .thanks-page .thanks-page-block__title {
+    font-size: 75px;
+    line-height: 120%;
+  }
 }
 
 @media (max-width: 1180px) {
@@ -9901,7 +9993,7 @@ body.noscroll {
     width: 320px;
   }
 
-  .main-page-top-block__catalog {
+  .main-page-top-block__catalog a {
     padding: 14px 15px;
   }
 
@@ -9909,7 +10001,7 @@ body.noscroll {
     font-size: 15px;
   }
 
-  .main-page-top-block__know-more {
+  .main-page-top-block__know-more a {
     padding: 16px 15px;
   }
 
@@ -11267,6 +11359,24 @@ body.noscroll {
 
   .spares-page__title {
     margin-bottom: 30px;
+  }
+
+  .rubber-wheel-new-page .fin-p-financing__title {
+    margin-right: 75px;
+    white-space: nowrap;
+  }
+
+  .thanks-page .thanks-page-block {
+    padding-top: 100px;
+  }
+
+  .thanks-page .thanks-page-block__title {
+    font-size: 69px;
+    line-height: 120%;
+  }
+
+  .thanks-page .thanks-page-block__left {
+    width: calc(100% - 230px);
   }
 }
 
@@ -12741,6 +12851,49 @@ body.noscroll {
   .know-price-popup__title {
     font-size: 32px;
   }
+
+  .rubber-wheel-new-page__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .rubber-wheel-new-page .fin-p-financing__top-flex {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+
+  .rubber-wheel-new-page .mp-catalogue__block3 {
+    width: calc(100% / 2 - 10px);
+  }
+
+  .rubber-wheel-new-page .fin-p-financing__ets-text {
+    margin-top: 15px;
+  }
+
+  .rubber-wheel-new-page .fin-p-financing__ets-text br {
+    display: none;
+  }
+
+  .rubber-wheel-new-page .fin-p-financing__title {
+    margin-right: 0;
+    white-space: nowrap;
+  }
+
+  .thanks-page .thanks-page-block__title {
+    font-size: 50px;
+  }
+
+  .thanks-page .thanks-page-block__flex {
+    display: block;
+  }
+
+  .thanks-page .thanks-page-block__left {
+    width: 100%;
+  }
+
+  .thanks-page .thanks-page-block__right {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -12761,8 +12914,11 @@ body.noscroll {
   }
 
   .main-page-top-block__catalog {
-    padding: 15px 20px;
     margin-bottom: 20px;
+  }
+
+  .main-page-top-block__catalog a {
+    padding: 15px 20px;
   }
 
   .main-page-top-block__catalog a {
@@ -12777,8 +12933,11 @@ body.noscroll {
   }
 
   .main-page-top-block__know-more {
-    padding: 17px 30px;
     margin-bottom: 20px;
+  }
+
+  .main-page-top-block__know-more a {
+    padding: 17px 30px;
   }
 
   .main-page-top-block__know-more a {
@@ -12906,7 +13065,7 @@ body.noscroll {
     width: 53%;
   }
 
-  .main-page-top-block__catalog {
+  .main-page-top-block__catalog a {
     padding: 12px 21px;
   }
 
@@ -12914,7 +13073,7 @@ body.noscroll {
     margin-right: 10px;
   }
 
-  .main-page-top-block__know-more {
+  .main-page-top-block__know-more a {
     padding: 17px 18px;
   }
 
@@ -14217,6 +14376,22 @@ body.noscroll {
     font-size: 16px;
     text-align: center;
   }
+
+  .rubber-wheel-new-page__wrapper {
+    margin-bottom: 0;
+  }
+
+  .thanks-page .thanks-page-block__title {
+    font-size: 42px;
+  }
+
+  .thanks-page .thanks-page-block__left {
+    font-size: 16px;
+  }
+
+  .thanks-page .thanks-page-block__right {
+    width: 100%;
+  }
 }
 
 @media (max-width: 630px) {
@@ -14343,6 +14518,14 @@ body.noscroll {
 
   .brand-page.mp-advices .mp-advices__slider {
     height: 540px;
+  }
+
+  .rubber-wheel-new-page .container {
+    padding: 0;
+  }
+
+  .rubber-wheel-new-page .mp-catalogue__block3 {
+    width: 100%;
   }
 }
 
@@ -14481,6 +14664,10 @@ body.noscroll {
 
   .maintenance-page-include__right-text {
     font-size: 12px;
+  }
+
+  .thanks-page .thanks-page-block__title {
+    font-size: 36px;
   }
 }
 
@@ -14721,6 +14908,10 @@ body.noscroll {
 
   .know-price-popup__wrapper {
     padding: 30px 15px 30px;
+  }
+
+  .thanks-page .thanks-page-block__title {
+    font-size: 32px;
   }
 }
 

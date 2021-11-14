@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SDLG</title>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+@@include('_burger.html')
+@@include('_know-price-popup.html')
+@@include('_connection-popup.html')
+@@include('_pop-up-map.html')
+<div class="bg-popups"></div>
+<div class="thanks-page js-main-page-top" style="background-image: url('../img/thanks-page-bg.jpg')">
+    @@include('_header.html')
+
+    <div class="thanks-page-block" >
+        <div class="thanks-page-block__wrapper">
+            <div class="container">
+                <div class="thanks-page-block__title">
+                    Спасибо за заявку
+                </div>
+                <div class="thanks-page-block__flex">
+                    <div class="thanks-page-block__left">
+                        Наш менеджер свяжется с Вами в ближайшее время
+                        по номеру +38 098 06 78 998 и уточнят детали заказа:
+                    </div>
+                    <div class="thanks-page-block__right">
+                        <div class="main-page-top-block__catalog main-page-top-block__relative-block-btn">
+                            <a href="#" class="main-page-top-block__catalog-link">
+                                <span class="main-page-top-block__catalog-text">В каталог</span>
+                                <span class="main-page-top-block__catalog-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+                                d="M1.25 8.125L10 13.125L18.75 8.125L10 3.125L1.25 8.125Z" stroke="#303030"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path
+                                d="M1.25 12.25L10 17.25L18.75 12.25" stroke="#303030" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--@@include('_users-list.html')-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/dist/jquery.inputmask.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>

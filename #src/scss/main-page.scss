@@ -104,20 +104,26 @@
 
   &__catalog {
     background-color: #FFD400;
-    padding: 15px 20px;
     transition: all .4s;
     @media (max-width: 991px) {
-      padding: 14px 15px;
     }
     @media (max-width: 730px) {
-      padding: 15px 20px;
       margin-bottom: 20px;
     }
     @media (max-width: 650px) {
-      padding: 12px 21px;
     }
 
     a {
+      padding: 15px 20px;
+      @media (max-width: 991px) {
+        padding: 14px 15px;
+      }
+      @media (max-width: 730px) {
+        padding: 15px 20px;
+      }
+      @media (max-width: 650px) {
+        padding: 12px 21px;
+      }
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -167,20 +173,27 @@
   &__know-more {
     background-color: transparent;
     border: 1px solid #B5B6B6;
-    padding: 17px 30px;
+
     transition: all .4s;
     @media (max-width: 991px) {
-      padding: 16px 15px;
     }
     @media (max-width: 730px) {
-      padding: 17px 30px;
       margin-bottom: 20px;
     }
     @media (max-width: 650px) {
-      padding: 17px 18px;
     }
 
     a {
+      padding: 17px 30px;
+      @media (max-width: 991px) {
+        padding: 16px 15px;
+      }
+      @media (max-width: 730px) {
+        padding: 17px 30px;
+      }
+      @media (max-width: 650px) {
+        padding: 17px 18px;
+      }
       display: flex;
       align-items: center;
       justify-content: center;

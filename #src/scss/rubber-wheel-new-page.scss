@@ -1,0 +1,57 @@
+.rubber-wheel-new-page{
+  &__wrapper{
+    margin-bottom: 80px;
+    @media (max-width: 768px){
+      margin-bottom: 50px;
+    }
+    @media (max-width: 650px){
+      margin-bottom: 0;
+    }
+  }
+  .container{
+    @media (max-width: 550px){
+      padding: 0;
+    }
+  }
+  .fin-p-financing__ets-about{
+    margin-top: 0;
+  }
+  .fin-p-financing__top-flex{
+    align-items: center;
+    @media (max-width: 768px){
+      align-items: normal;
+      //padding: 0;
+    }
+  }
+  .mp-catalogue__block3 {
+    width: calc(100% / 3 - 13.3px);
+    @media (max-width: 768px){
+      width: calc(100% / 2 - 10px);
+    }
+    @media (max-width: 550px){
+      width: 100%;
+    }
+  }
+  .mp-catalogue__exemplar-text{
+    padding-bottom: 1px;
+  }
+  .fin-p-financing__ets-text{
+    @media (max-width: 768px){
+      margin-top: 15px;
+      br{
+        display: none;
+      }
+    }
+  }
+  .fin-p-financing__title {
+    margin-right: 113px;
+    @media (max-width: 991px) {
+      margin-right: 75px;
+      white-space: nowrap;
+    }
+    @media (max-width: 768px) {
+      margin-right: 0;
+      white-space: nowrap;
+    }
+  }
+}

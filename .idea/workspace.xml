@@ -20,46 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50f78d95-a9ba-46b9-a6c5-65b4588b5b0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/#src/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/card-NO.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/card-NO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/card-one-tab.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/card-one-tab.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/catalogue-inner-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/catalogue-inner-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/contacts-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/contacts-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/product-card-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/product-card-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/rubber-wheel-new-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/scss/thanks-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/thanks-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/catalogue-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/catalogue-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/rubber-wheel-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/rubber-wheel-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/scss/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/scss/main-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/main-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/product-catalogue-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/product-catalogue-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/spare-card-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/spare-card-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/search-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/search-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/service-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/service-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/spare-card-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/spare-card-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/brand-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/brand-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/card-NO.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/card-NO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/card-one-tab.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/card-one-tab.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/catalogue-inner-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/catalogue-inner-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLG/catalogue-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/catalogue-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/category-NO.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/category-NO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/contacts-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/contacts-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLG/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLG/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/finance-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/finance-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLG/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/maintenance-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/maintenance-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/news-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/news-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/news-share-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/news-share-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/product-card-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/product-card-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/rig-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/rig-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDLG/rubber-wheel-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/rubber-wheel-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/scoop-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/scoop-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/search-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/search-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/service-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/service-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/spare-card-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/spare-card-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDLG/spares-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/SDLG/spares-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +113,7 @@
       <workItem from="1636631888857" duration="6442000" />
       <workItem from="1636661908504" duration="3099000" />
       <workItem from="1636721716634" duration="816000" />
+      <workItem from="1636899731545" duration="5303000" />
     </task>
     <servers />
   </component>
@@ -155,11 +131,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1636638115070">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050/1920.30.1680.1020@0.30.1920.1050" timestamp="1636638115070" />
   </component>
 </project>
